@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryForge MVP</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="themes.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">StoryForge</div>
+        <div class="header-actions">
+          <input type="text" id="searchInput" placeholder="Search..." />
+          <button id="searchBtn">Search</button>
+          <button id="themeToggleBtn">Toggle Theme</button>
+        </div>
+      </header>
+
+  <div class="container">
+    <aside class="sidebar" id="sidebar">
+      <div class="project-controls">
+        <button id="newProjectBtn">New Project</button>
+        <button id="loadProjectBtn">Load Project</button>
+        <select id="projectSelect"></select>
+      </div>
+
+      <div class="structure">
+        <h3>Structure</h3>
+        <button id="addChapterBtn">Add Chapter</button>
+        <div id="chapterList"></div>
+      </div>
+
+      <div class="view-switch">
+        <button id="viewOutlineBtn">Outline View</button>
+        <button id="viewTimelineBtn">Timeline View</button>
+      </div>
+    </aside>
+
+    <main class="editor-pane">
+      <h2 id="selectedChapterTitle"></h2>
+      <div id="scenesContainer"></div>
+      <div id="editorSection" class="hidden">
+        <h3 id="editorTitle">Edit Scene</h3>
+        <textarea id="sceneEditor"></textarea>
+        <div class="editor-actions">
+          <button id="saveSceneBtn">Save Scene</button>
+          <button id="tagCharacterBtn">Tag Character</button>
+          <button id="tagPlaceBtn">Tag Place</button>
+          <button id="closeEditorBtn">Close</button>
+        </div>
+      </div>
+    </main>
+
+    <aside class="sidebar" id="indexSidebar">
+      <h3>Index</h3>
+      <div class="index-section">
+        <h4>Characters</h4>
+        <ul id="characterIndex"></ul>
+      </div>
+      <div class="index-section">
+        <h4>Places</h4>
+        <ul id="placeIndex"></ul>
+      </div>
+      <h3>Search Results</h3>
+      <ul id="searchResults"></ul>
+    </aside>
+  </div>
+
+  <footer>
+    <div>Autosaved. Local Data.</div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* Default theme (light) */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --header-bg: #eeeeee;
+    --sidebar-bg: #f6f6f6;
+    --accent-color: #4c9aff;
+  }
+  
+  /* Dark theme */
+  :root.dark-theme {
+    --bg-color: #1e1e1e;
+    --text-color: #dddddd;
+    --header-bg: #333333;
+    --sidebar-bg: #2c2c2c;
+    --accent-color: #5c9cff;
+  }
+  
+  /* Sepia theme */
+  :root.sepia-theme {
+    --bg-color: #f4ecd8;
+    --text-color: #333333;
+    --header-bg: #e5dcc4;
+    --sidebar-bg: #eae2c9;
+    --accent-color: #a67b5b;
+  }
+  
+  /* Adjust main layout elements to use theme vars */
+  body {
+    background: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  header, footer {
+    background: var(--header-bg);
+  }
+  
+  .sidebar {
+    background: var(--sidebar-bg);
+  }
+  
+  a, button {
+    color: var(--text-color);
+    background: var(--accent-color);
+    border: none;
+    padding: 0.3rem 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  a:hover, button:hover {
+    opacity: 0.9;
+  }
+  
+  input, textarea, select {
+    background: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+  }
+  
+  .editor-actions button {
+    background: var(--accent-color);
+    color: #fff;
+  }

@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  header {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .container {
+    display: flex;
+    height: calc(100vh - 48px);
+  }
+  
+  .sidebar {
+    width: 20%;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+  
+  .editor-pane {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  
+  .scene-item {
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+  
+  #editorSection {
+    border: 1px solid #ccc;
+  }
+  
+  footer {
+    border-top: 1px solid #ccc;
+    text-align: center;
+  }
+
+  .timeline-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeline-scene {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5rem;
+    background: #fff;
+    cursor: move;
+  }

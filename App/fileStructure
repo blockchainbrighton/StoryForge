@@ -1,0 +1,11 @@
+project-root/
+│
+├─ index.html
+├─ style.css
+└─ js/
+   ├─ app.js        // Main application initialization and event wiring
+   ├─ data.js       // Data model, load/save to localStorage
+   ├─ ui.js         // UI rendering, DOM updates
+   ├─ editor.js     // Editor logic and tagging
+   ├─ search.js     // Search functionality
+   └─ timeline.js   // Timeline view (initial stub)
